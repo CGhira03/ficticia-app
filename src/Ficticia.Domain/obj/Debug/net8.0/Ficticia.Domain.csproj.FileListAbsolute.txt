@@ -1,0 +1,12 @@
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\bin\Debug\net8.0\Ficticia.Domain.deps.json
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\bin\Debug\net8.0\Ficticia.Domain.dll
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\bin\Debug\net8.0\Ficticia.Domain.pdb
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\Ficticia.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\Ficticia.Domain.AssemblyInfoInputs.cache
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\Ficticia.Domain.AssemblyInfo.cs
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\Ficticia.Domain.csproj.CoreCompileInputs.cache
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\Ficticia.Domain.sourcelink.json
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\Ficticia.Domain.dll
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\refint\Ficticia.Domain.dll
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\Ficticia.Domain.pdb
+C:\Users\cghir\OneDrive\Escritorio\FicticiaApp\src\Ficticia.Domain\obj\Debug\net8.0\ref\Ficticia.Domain.dll
