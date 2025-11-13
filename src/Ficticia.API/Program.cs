@@ -5,6 +5,7 @@ using Ficticia.Application.Services;
 using Ficticia.API.Auth;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.OpenApi.Models;
+using Ficticia.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,13 +17,26 @@ builder.Services.AddDbContext<FicticiaDbContext>(options =>
 builder.Services.AddScoped<IPersonService, PersonService>();
 
 // --- Autenticación personalizada ---
-builder.Services.AddAuthentication("JwtDemo")
-    .AddScheme<AuthenticationSchemeOptions, JwtDemoHandler>("JwtDemo", null);
+builder.Services.AddAuthentication("FakeJwt")
+    .AddScheme<AuthenticationSchemeOptions, JwtDemoHandler>("FakeJwt", null);
 
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
     options.AddPolicy("ReadOnly", policy => policy.RequireRole("Admin", "Consultor"));
+});
+
+// --- CORS ---
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy
+                .WithOrigins("https://localhost:7090", "http://localhost:5074")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
 });
 
 // --- Controladores ---
@@ -34,7 +48,6 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "Ficticia API", Version = "v1" });
 
-    // 🔒 Definición de seguridad para el botón "Authorize"
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "Ingrese el token: **Bearer admin** o **Bearer consultor**",
@@ -44,7 +57,6 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer"
     });
 
-    // 🔐 Requerir seguridad globalmente
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -63,6 +75,14 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
+// --- Seed de atributos ---
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<FicticiaDbContext>();
+    SeedData.Initialize(context);
+}
+
 // --- Middleware ---
 if (app.Environment.IsDevelopment())
 {
@@ -71,8 +91,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// 🔒 Importante: el orden de estos dos middlewares
+app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -1,0 +1,113 @@
+﻿@model Ficticia.Web.Models.PersonFilterViewModel
+
+@{
+    ViewData["Title"] = "Inicio";
+
+    string role = Model.Role?.ToLowerInvariant() ?? "";
+    string nameFilter = Model.Name ?? "";
+    bool? isActiveFilter = Model.IsActive;
+    int? minAgeFilter = Model.MinAge;
+    int? maxAgeFilter = Model.MaxAge;
+}
+
+<h2 class="mb-4">Listado de Personas</h2>
+
+@if (ViewBag.ApiError != null)
+{
+    <div class="alert alert-danger">@ViewBag.ApiError</div>
+}
+
+@if (!string.IsNullOrEmpty(role))
+{
+    <p>
+        Bienvenido, <strong>@role.ToUpperInvariant()</strong> |
+        <a asp-controller="Auth" asp-action="Logout" class="btn btn-link">Cerrar sesión</a>
+    </p>
+}
+else
+{
+    <a asp-controller="Auth" asp-action="Login" class="btn btn-primary">Iniciar sesión</a>
+}
+
+<hr />
+
+<form method="get" asp-action="Index" class="row g-3 mb-4">
+    <div class="col-md-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" id="name" name="name" class="form-control"
+               value="@nameFilter" placeholder="Buscar por nombre..." />
+    </div>
+
+    <div class="col-md-2">
+        <label for="isActive" class="form-label">Estado</label>
+        <select id="isActive" name="isActive" class="form-select">
+            <option value="">-- Todos --</option>
+            <option value="true" selected="@(isActiveFilter == true ? "selected" : null)">Activo</option>
+            <option value="false" selected="@(isActiveFilter == false ? "selected" : null)">Inactivo</option>
+        </select>
+    </div>
+
+    <div class="col-md-2">
+        <label for="minAge" class="form-label">Edad mínima</label>
+        <input type="number" id="minAge" name="minAge" class="form-control"
+               value="@(minAgeFilter?.ToString() ?? "")" min="0" />
+    </div>
+
+    <div class="col-md-2">
+        <label for="maxAge" class="form-label">Edad máxima</label>
+        <input type="number" id="maxAge" name="maxAge" class="form-control"
+               value="@(maxAgeFilter?.ToString() ?? "")" min="0" />
+    </div>
+
+    <div class="col-md-3 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary me-2">Filtrar</button>
+        <a asp-action="Index" class="btn btn-secondary">Limpiar</a>
+    </div>
+</form>
+
+@if (Model.Persons != null && Model.Persons.Any())
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Identificación</th>
+                <th>Edad</th>
+                <th>Género</th>
+                <th>Estado</th>
+                @if (role == "admin")
+                {
+                    <th>Acciones</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model.Persons)
+            {
+                <tr>
+                    <td>@p.FullName</td>
+                    <td>@p.Identification</td>
+                    <td>@p.Age</td>
+                    <td>@p.Gender</td>
+                    <td>@(p.IsActive ? "Activo" : "Inactivo")</td>
+                    @if (role == "admin")
+                    {
+                        <td>
+                            <a asp-controller="Persons" asp-action="Edit" asp-route-id="@p.Id" class="btn btn-sm btn-warning">Editar</a>
+                            <a asp-controller="Persons" asp-action="Delete" asp-route-id="@p.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay personas registradas.</p>
+}
+
+@if (role == "admin")
+{
+    <a asp-controller="Persons" asp-action="Create" class="btn btn-success">Nueva Persona</a>
+}

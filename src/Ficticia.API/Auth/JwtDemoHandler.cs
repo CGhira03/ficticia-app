@@ -1,7 +1,8 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.Extensions.Options;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Text.Encodings.Web;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace Ficticia.API.Auth
 {
@@ -12,36 +13,49 @@ namespace Ficticia.API.Auth
             ILoggerFactory logger,
             UrlEncoder encoder,
             ISystemClock clock)
-            : base(options, logger, encoder, clock) { }
+            : base(options, logger, encoder, clock)
+        {
+        }
 
         protected override Task<AuthenticateResult> HandleAuthenticateAsync()
         {
-            // Leer encabezado Authorization
+            if (!Request.Headers.ContainsKey("Authorization"))
+                return Task.FromResult(AuthenticateResult.Fail("No se envió encabezado Authorization."));
+
             var authHeader = Request.Headers["Authorization"].ToString();
 
-            if (string.IsNullOrEmpty(authHeader))
-                return Task.FromResult(AuthenticateResult.Fail("No token provided"));
+            if (!authHeader.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase))
+                return Task.FromResult(AuthenticateResult.Fail("Formato de token inválido."));
 
-            // Token simulado: "Bearer admin" o "Bearer consultor"
-            var token = authHeader.Replace("Bearer ", "").Trim();
-
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, token)
-            };
+            var token = authHeader.Substring("Bearer ".Length).Trim();
 
             if (token.Equals("admin", StringComparison.OrdinalIgnoreCase))
-                claims.Add(new Claim(ClaimTypes.Role, "Admin"));
-            else if (token.Equals("consultor", StringComparison.OrdinalIgnoreCase))
-                claims.Add(new Claim(ClaimTypes.Role, "Consultor"));
-            else
-                return Task.FromResult(AuthenticateResult.Fail("Invalid token"));
+            {
+                var claims = new[]
+                {
+                    new Claim(ClaimTypes.Name, "Admin"),
+                    new Claim(ClaimTypes.Role, "Admin")
+                };
+                var identity = new ClaimsIdentity(claims, Scheme.Name);
+                var principal = new ClaimsPrincipal(identity);
+                var ticket = new AuthenticationTicket(principal, Scheme.Name);
+                return Task.FromResult(AuthenticateResult.Success(ticket));
+            }
 
-            var identity = new ClaimsIdentity(claims, Scheme.Name);
-            var principal = new ClaimsPrincipal(identity);
-            var ticket = new AuthenticationTicket(principal, Scheme.Name);
+            if (token.Equals("consultor", StringComparison.OrdinalIgnoreCase))
+            {
+                var claims = new[]
+                {
+                    new Claim(ClaimTypes.Name, "Consultor"),
+                    new Claim(ClaimTypes.Role, "Consultor")
+                };
+                var identity = new ClaimsIdentity(claims, Scheme.Name);
+                var principal = new ClaimsPrincipal(identity);
+                var ticket = new AuthenticationTicket(principal, Scheme.Name);
+                return Task.FromResult(AuthenticateResult.Success(ticket));
+            }
 
-            return Task.FromResult(AuthenticateResult.Success(ticket));
+            return Task.FromResult(AuthenticateResult.Fail("Token inválido."));
         }
     }
 }

@@ -3,60 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\tests\\Ficticia.Tests\\PersonServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tests\\Ficticia.Tests\\PersonServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\tests\\Ficticia.Tests\\FakeDbContextFactory.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tests\\Ficticia.Tests\\FakeDbContextFactory.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\auth\\jwtdemohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\auth\\jwtdemohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\controllers\\attributetypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\controllers\\attributetypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Auth\\JwtDemoHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.API\\Auth\\JwtDemoHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\AttributeTypesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.API\\Controllers\\AttributeTypesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\PersonsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.API\\Controllers\\PersonsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Services\\PersonService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.Application\\Services\\PersonService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D44493-961D-42B3-9B0E-44FFFF5DC67C}|src\\Ficticia.API\\Ficticia.API.csproj|solutionrelative:src\\ficticia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.Application\\DTOs\\PersonDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.application\\dtos\\attributetypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|solutionrelative:src\\ficticia.application\\dtos\\attributetypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.application\\dtos\\personattributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|solutionrelative:src\\ficticia.application\\dtos\\personattributedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Exceptions\\BusinessException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.Application\\Exceptions\\BusinessException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.application\\dtos\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|solutionrelative:src\\ficticia.application\\dtos\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Interfaces\\IPersonService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.Application\\Interfaces\\IPersonService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.application\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|solutionrelative:src\\ficticia.application\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.API\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.application\\interfaces\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|solutionrelative:src\\ficticia.application\\interfaces\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Infrastructure\\Persistence\\FicticiaDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Ficticia.Infrastructure\\Persistence\\FicticiaDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|c:\\users\\cghir\\onedrive\\escritorio\\ficticiaapp\\src\\ficticia.application\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE160E0B-D8AD-4BD6-AF34-368AA7AC250F}|src\\Ficticia.Application\\Ficticia.Application.csproj|solutionrelative:src\\ficticia.application\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,188 +66,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FakeDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\tests\\Ficticia.Tests\\FakeDbContextFactory.cs",
-              "RelativeDocumentMoniker": "tests\\Ficticia.Tests\\FakeDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\tests\\Ficticia.Tests\\FakeDbContextFactory.cs",
-              "RelativeToolTip": "tests\\Ficticia.Tests\\FakeDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T16:58:00.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\tests\\Ficticia.Tests\\PersonServiceTests.cs",
-              "RelativeDocumentMoniker": "tests\\Ficticia.Tests\\PersonServiceTests.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\tests\\Ficticia.Tests\\PersonServiceTests.cs",
-              "RelativeToolTip": "tests\\Ficticia.Tests\\PersonServiceTests.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAYwF0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T16:52:51.466Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\Ficticia.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\Ficticia.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-13T00:53:59.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "JwtDemoHandler.cs",
               "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Auth\\JwtDemoHandler.cs",
               "RelativeDocumentMoniker": "src\\Ficticia.API\\Auth\\JwtDemoHandler.cs",
               "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Auth\\JwtDemoHandler.cs",
               "RelativeToolTip": "src\\Ficticia.API\\Auth\\JwtDemoHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:31:18.644Z",
+              "WhenOpened": "2025-11-13T00:53:45.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.API\\Program.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Program.cs",
-              "RelativeToolTip": "src\\Ficticia.API\\Program.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAYwFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T13:45:20.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AttributeTypesController.cs",
               "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\AttributeTypesController.cs",
               "RelativeDocumentMoniker": "src\\Ficticia.API\\Controllers\\AttributeTypesController.cs",
               "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\AttributeTypesController.cs",
               "RelativeToolTip": "src\\Ficticia.API\\Controllers\\AttributeTypesController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:30:53.015Z",
+              "WhenOpened": "2025-11-13T00:53:37.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\Ficticia.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:53:34.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PersonsController.cs",
               "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\PersonsController.cs",
               "RelativeDocumentMoniker": "src\\Ficticia.API\\Controllers\\PersonsController.cs",
               "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Controllers\\PersonsController.cs",
               "RelativeToolTip": "src\\Ficticia.API\\Controllers\\PersonsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:30:33.948Z",
+              "WhenOpened": "2025-11-13T00:53:17.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PersonAttributeDto.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
-              "RelativeToolTip": "src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:00:18.795Z",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Ficticia.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\appsettings.json",
+              "RelativeToolTip": "src\\Ficticia.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-13T00:53:06.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PersonService.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Services\\PersonService.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.Application\\Services\\PersonService.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Services\\PersonService.cs",
-              "RelativeToolTip": "src\\Ficticia.Application\\Services\\PersonService.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAYwJMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T14:24:46.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PersonDto.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonDto.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.Application\\DTOs\\PersonDto.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonDto.cs",
-              "RelativeToolTip": "src\\Ficticia.Application\\DTOs\\PersonDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T14:22:42.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AttributeTypeDto.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
-              "RelativeToolTip": "src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T14:23:17.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BusinessException.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
-              "RelativeToolTip": "src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T14:32:38.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IPersonService.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
-              "RelativeToolTip": "src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T14:24:16.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "src\\Ficticia.API\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\appsettings.Development.json",
               "RelativeToolTip": "src\\Ficticia.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-10T13:37:12.129Z",
+              "WhenOpened": "2025-11-13T00:53:03.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.API\\Program.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.API\\Program.cs",
+              "RelativeToolTip": "src\\Ficticia.API\\Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:52:51.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AttributeTypeDto.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
+              "RelativeToolTip": "src\\Ficticia.Application\\DTOs\\AttributeTypeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:52:46.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonAttributeDto.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
+              "RelativeToolTip": "src\\Ficticia.Application\\DTOs\\PersonAttributeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:52:44.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PersonDto.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonDto.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.Application\\DTOs\\PersonDto.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\DTOs\\PersonDto.cs",
+              "RelativeToolTip": "src\\Ficticia.Application\\DTOs\\PersonDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:52:41.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BusinessException.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
+              "RelativeToolTip": "src\\Ficticia.Application\\Exceptions\\BusinessException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:52:37.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPersonService.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
+              "RelativeToolTip": "src\\Ficticia.Application\\Interfaces\\IPersonService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:52:31.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "FicticiaDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Infrastructure\\Persistence\\FicticiaDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Ficticia.Infrastructure\\Persistence\\FicticiaDbContext.cs",
-              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Infrastructure\\Persistence\\FicticiaDbContext.cs",
-              "RelativeToolTip": "src\\Ficticia.Infrastructure\\Persistence\\FicticiaDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "src\\Ficticia.Application\\Services\\PersonService.cs",
+              "ToolTip": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Services\\PersonService.cs",
+              "RelativeToolTip": "src\\Ficticia.Application\\Services\\PersonService.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAwwIcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T13:31:46.957Z",
+              "WhenOpened": "2025-11-13T00:52:11.283Z",
               "EditorCaption": ""
             }
           ]

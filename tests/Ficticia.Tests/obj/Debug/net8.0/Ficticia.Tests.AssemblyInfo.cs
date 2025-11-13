@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ficticia.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90d15dec62e93a918af30b1502dc3f445fa425b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa0fa0d9ae85ca305438e213fb96b8452ea020a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ficticia.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ficticia.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

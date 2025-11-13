@@ -1,110 +1,183 @@
-﻿Ficticia S.A. — ABM de Personas (.NET 8 Web API)
+﻿Ficticia S.A. — ABM de Personas (.NET 8 Web API + MVC Frontend)
 
-Autor: [Celeste Ghirardotti]
-Fecha: [11/2025]
+Autor: Celeste Ghirardotti
+
+Fecha: 11/2025
+
 Rol simulado: Desarrollador/a .NET (Semi Senior)
 
-Objetivo: Implementar una API REST sencilla para gestionar personas en el área de seguros de vida de Ficticia S.A., siguiendo buenas prácticas de arquitectura, validación, y organización del código.
+Objetivo: Implementar una solución completa basada en .NET 8, que incluye:
+	Una API REST para gestionar personas (alta, baja, modificación, listado y filtrado).
+	Un frontend MVC (Ficticia.Web) con autenticación simulada, manejo de roles y sesiones, e interfaz adaptable al usuario logueado.
 
 Arquitectura del Proyecto
-Proyecto estructurado en capas modulares (monolito limpio):
+Estructura modular:
+
 /src
- ├── Ficticia.API             → Capa de presentación (controllers, auth, swagger)
+
+ ├── Ficticia.API             → Capa de presentación (Web API, controllers, auth, swagger)
+ 
  ├── Ficticia.Application     → Capa de aplicación (servicios, DTOs, validaciones)
- ├── Ficticia.Domain          → Capa de dominio (entidades y reglas básicas)
- └── Ficticia.Infrastructure  → Capa de persistencia (EF Core, DbContext)
+ 
+ ├── Ficticia.Domain          → Capa de dominio (entidades, lógica base)
+ 
+ ├── Ficticia.Infrastructure  → Capa de persistencia (EF Core, DbContext)
+ 
+ └── Ficticia.Web             → Capa MVC (frontend web, vistas, autenticación, consumo de API)
+
 /tests
+
  └── Ficticia.Tests           → Tests unitarios (xUnit)
 
-
-Tecnologías principales:
+Tecnologías principales
 	.NET 8 (C#)
 	Entity Framework Core (SQL Server / InMemory)
-	Swagger (documentación)
-	JWT simulado (roles)
+	ASP.NET Core MVC (frontend)
+	Swagger / OpenAPI (documentación interactiva)
+	JWT simulado (autenticación basada en roles)
 	xUnit (testing)
-	Logging con Microsoft.Extensions.Logging
+	Session y Cookies (gestión del login)
+	Bootstrap 5 (interfaz responsiva)
+	Logging con ILogger<T>
 
 Decisiones Técnicas
 1️ Persistencia
 	ORM: Entity Framework Core 8
 	Base de datos: SQL Server LocalDB
-	Se usa FicticiaDbContext con entidades:
-	Person
-	AttributeType
-	PersonAttribute
+	Entidades:
+		Person
+		AttributeType
+		PersonAttribute
+Se utiliza una tabla pivote (PersonAttributes) para permitir atributos dinámicos por persona.
 
-2️ Atributos dinámicos
-	Se implementó la estrategia de tabla pivote:
-		Persons
-		AttributeTypes
-		PersonAttributes
--> Esto permite agregar nuevos atributos sin alterar el esquema de la tabla Persons.
-Cada Person puede tener N atributos con nombre y valor configurables.
+2️ Autenticación y Autorización
+Autenticación simulada por rol (sin base de datos de usuarios).
+El acceso se define por el valor del token enviado en el header:
 
-3️ Autenticación y roles
-	JWT simulado (sin login real):
-		Se envía el header:
-		Authorization: Bearer admin → Rol Admin (CRUD completo)
-		Authorization: Bearer consultor → Rol Consultor (solo lectura)
+	Token enviado	Rol asignado	Permisos
+	
+	Bearer admin	Admin	CRUD completo
+	
+	Bearer consultor	Consultor	Solo lectura
 
-4️ Validaciones
-	Data Annotations en las entidades (campos obligatorios, unicidad).
-	Reglas de negocio (edad válida, identificación única) implementadas en PersonService.
+Lógica aplicada tanto en la API como en el frontend MVC:
+	Si el usuario inicia sesión con contraseña "admin", obtiene token "Bearer admin".
+	Si inicia con "consultor", obtiene token "Bearer consultor".
+Los controladores validan el token y aplican [Authorize(Policy = "AdminOnly")] o [Authorize(Policy = "ReadOnly")].
 
-5️ Logging
-	Logging básico a consola mediante ILogger<T> en los controllers.
+3️ Autenticación en el Frontend (MVC)
+Se implementó un controlador de autenticación (AuthController) con las siguientes acciones:
+
+Acción	Ruta	Descripción
+
+GET /Auth/Login	Muestra formulario de login	
+
+POST /Auth/Login	Verifica contraseña (admin o consultor) y guarda el token en Session	
+
+GET /Auth/Logout	Limpia la sesión y redirige al inicio	
+
+Filtrado de Personas (en MVC)
+Se agregó un formulario de filtrado en el frontend MVC para listar personas según:
+	Nombre
+	Estado (Activo / Inactivo)
+	Edad mínima / máxima
+Los filtros se envían mediante query strings al endpoint /api/persons, aprovechando la lógica ya disponible en el backend.
+El botón “Limpiar” reinicia los filtros.
+
+Lógica:
+Si la contraseña ingresada es "admin", se guarda en sesión:
+
+	RoleToken = "admin"
+
+Si es "consultor", se guarda:
+
+	RoleToken = "consultor"
+
+Estos valores se utilizan automáticamente por PersonService al agregar el header de autorización en cada request al API.
+
+4️ Control de Acceso en la Web
+El frontend MVC (Ficticia.Web) ahora valida el rol en cada vista:
+En Home/Index:
+	Muestra la lista de personas desde la API.
+	Si el rol es admin, muestra botones para crear, editar y eliminar.
+	Si es consultor o no logueado, solo puede ver la tabla.
+En PersonsController:
+	Antes de ejecutar acciones de escritura (Create, Edit, Delete), verifica el rol en sesión.
+	Si el usuario no es admin, se redirige a Home con un mensaje:
+	¡Solo los usuarios con rol Admin pueden realizar esta acción!
+
+5️ UI Dinámica y Sesión
+	Se agregó un Layout dinámico (_Layout.cshtml) que:
+	Muestra el rol actual del usuario en la barra superior.
+	Cambia entre los botones “Iniciar sesión” y “Cerrar sesión” según la sesión activa.
+	Permite navegar fácilmente entre Home, Personas y Login.
+	Se agregó un sistema de mensajes globales con TempData["Message"].
 
 Ejecución del Proyecto
-1️ Clonar el repo
+A Clonar el repo
+
 	git clone https://github.com/tuusuario/ficticia-app.git
 	cd ficticia-app
 
-2️ Crear la base de datos
+B Crear la base de datos
+
 	dotnet ef database update --project src/Ficticia.Infrastructure --startup-project src/Ficticia.API
 
-3️ Correr la API
+C Correr la API
+
 	dotnet run --project src/Ficticia.API
 
 
-La API se ejecutará en:
+API disponible en:
 
--> https://localhost:5022/swagger
+	https://localhost:5022
 
-Credenciales Demo (JWT simulado)
-	Rol	Token en Swagger
-		Admin	Bearer admin
-		Consultor	Bearer consultor
-Usá el botón “Authorize” en Swagger para probar los endpoints según el rol.
+D Correr el Frontend MVC
 
-Endpoints principales
+	dotnet run --project src/Ficticia.Web
+
+Aplicación Web disponible en:
+
+	https://localhost:7090
+
+Credenciales Demo
+
+	Usuario (contraseña)	Rol asignado	Permisos
+	
+	admin	Admin	Crear, editar, eliminar y listar
+	
+	consultor	Consultor	Solo lectura (listar)
+	
+Endpoints Principales (API)
+
 	Método	Endpoint	Rol	Descripción
-	GET	/api/persons	Admin / Consultor	Listar y filtrar personas
-	GET	/api/persons/{id}	Admin / Consultor	Obtener una persona
+	
+	GET	/api/persons	Admin / Consultor	Listar personas
+	
+	GET	/api/persons/{id}	Admin / Consultor	Obtener persona
+	
 	POST	/api/persons	Admin	Crear persona
+	
 	PUT	/api/persons/{id}	Admin	Editar persona
+	
 	DELETE	/api/persons/{id}	Admin	Eliminar persona
-	GET	/api/attributetypes	Todos	Listar tipos de atributos
-	POST	/api/attributetypes	Admin	Crear atributo dinámico
-
+	
 Testing
-	Ejecutar los tests unitarios
-	dotnet test
 
+Ejecutar los tests unitarios:
+
+	dotnet test
 
 Cobertura:
 	Creación y actualización de personas
 	Validación de identificación única
 	Eliminación
-	Filtrado por nombre
+	Filtrado
+	Validación de acceso por rol
 
-Migraciones EF incluidas
-	Se genera automáticamente la base de datos mediante:
-		dotnet ef migrations add InitialCreate
-		dotnet ef database update
-
-Notas finales
-	Arquitectura preparada para escalar a Clean Architecture si se desea.
-	Atributos dinámicos implementados de forma flexible y mantenible.
-	Código 100% compilable y listo para demo en entrevista.
-	Swagger incluye definición de seguridad con Bearer tokens simulados.
+Notas finales:
+	Arquitectura escalable hacia Clean Architecture.
+	Autenticación simple pero efectiva para demos o entrevistas técnicas.
+	Código 100% compilable y funcional.
+	Frontend y API integrados vía HttpClient con headers dinámicos.
+	UI amigable y clara, con feedback visual y roles simulados.

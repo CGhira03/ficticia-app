@@ -1,0 +1,70 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Ficticia</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    @{
+        var role = HttpContextAccessor.HttpContext?.Session.GetString("RoleToken");
+    }
+
+    <header class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Ficticia</a>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-controller="Home" asp-action="Index">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-controller="Persons" asp-action="Index">Personas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-end">
+                @if (!string.IsNullOrEmpty(role))
+                {
+                    <span class="badge bg-info text-dark me-2">
+                        Rol actual: <strong>@role.ToUpperInvariant()</strong>
+                    </span>
+                    <a asp-controller="Auth" asp-action="Logout" class="btn btn-outline-light btn-sm">Cerrar sesión</a>
+                }
+                else
+                {
+                    <a asp-controller="Auth" asp-action="Login" class="btn btn-primary btn-sm">Iniciar sesión</a>
+                }
+            </div>
+        </div>
+    </header>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="container mt-3">
+            <div class="alert alert-info text-center">@TempData["Message"]</div>
+        </div>
+    }
+
+    <main class="container mt-4">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted mt-5 py-3 bg-light">
+        <div class="container text-center">
+            &copy; @DateTime.Now.Year - Ficticia
+        </div>
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

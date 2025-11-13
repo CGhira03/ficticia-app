@@ -40,8 +40,8 @@ namespace Ficticia.API.Controllers
             var existing = await _context.AttributeTypes.FindAsync(id);
             if (existing == null) return NotFound();
 
-            existing.Name = type.Name;
-            existing.Description = type.Description;
+            existing.Type = type.Type;
+            existing.Value = type.Value;
             await _context.SaveChangesAsync();
 
             return Ok(existing);

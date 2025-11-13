@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Iniciar sesión";
+}
+
+<div class="container mt-5" style="max-width: 400px;">
+    <h2 class="text-center mb-4">🔐 Iniciar sesión</h2>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger text-center">@ViewBag.Error</div>
+    }
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success text-center">@TempData["Message"]</div>
+    }
+
+    <form asp-action="Login" method="post" class="card p-4 shadow-sm">
+        <div class="form-group mb-3">
+            <label class="form-label">Contraseña:</label>
+            <input type="password" name="password" class="form-control" placeholder="admin o consultor" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+    </form>
+
+    <p class="text-center mt-3 text-muted">
+        💡 Usa <b>admin</b> o <b>consultor</b> como contraseña de prueba.
+    </p>
+</div>

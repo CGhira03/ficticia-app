@@ -11,7 +11,7 @@ namespace Ficticia.Domain.Entities
         public string FullName { get; set; } = string.Empty;
 
         [Required, MaxLength(8)]
-        public string Identification { get; set; } = string.Empty; //unica
+        public string Identification { get; set; } = string.Empty; 
 
         [Range(0, 90, ErrorMessage = "La edad debe estar entre 0 y 90.")]
         public int Age { get; set; }

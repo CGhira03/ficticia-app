@@ -9,6 +9,7 @@
       "Ficticia.API/1.0.0": {
         "dependencies": {
           "Ficticia.Application": "1.0.0",
+          "Ficticia.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.10",
           "Microsoft.EntityFrameworkCore.Design": "9.0.10",
           "Swashbuckle.AspNetCore": "6.6.2"

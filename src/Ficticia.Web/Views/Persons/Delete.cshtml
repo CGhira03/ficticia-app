@@ -1,0 +1,32 @@
+﻿@model Ficticia.Web.Models.PersonDto
+
+<h2>🗑️ Eliminar Persona</h2>
+
+<h4>¿Está seguro que desea eliminar a esta persona?</h4>
+
+<div class="mb-3">
+    <strong>@Model.FullName</strong> <br />
+    Identificación: @Model.Identification <br />
+    Edad: @Model.Age <br />
+    Género: @Model.Gender <br />
+    Estado: @(Model.IsActive ? "Activo" : "Inactivo")
+</div>
+
+@if (Model.Attributes != null && Model.Attributes.Any())
+{
+    <h5>Atributos adicionales</h5>
+    <ul>
+        @foreach (var attr in Model.Attributes)
+        {
+            <li><strong>@attr.Type:</strong> @attr.Value</li>
+        }
+    </ul>
+}
+
+<form asp-action="Delete" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+    <br />
+    <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro que desea eliminar esta persona?')">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -1,0 +1,81 @@
+﻿@model Ficticia.Web.Models.PersonDto
+
+<h2>➕ Nueva Persona</h2>
+
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group mb-3">
+        <label>Nombre Completo</label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Identificación</label>
+        <input asp-for="Identification" class="form-control" />
+        <span asp-validation-for="Identification" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Edad</label>
+        <input asp-for="Age" type="number" class="form-control" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Género</label>
+        <input asp-for="Gender" class="form-control" />
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Estado</label>
+        <select asp-for="IsActive" class="form-control">
+            <option value="true">Activo</option>
+            <option value="false">Inactivo</option>
+        </select>
+    </div>
+
+    <hr />
+    <h4>Atributos adicionales</h4>
+
+    @{
+        var fixedAttributes = new List<string>
+    {
+    "¿Maneja?",
+    "¿Usa lentes?",
+    "¿Es diabético?",
+    "¿Tiene hipertensión?",
+    "¿Fuma?",
+    "¿Consume alcohol regularmente?",
+    "¿Ha tenido cirugías importantes?",
+    "¿Ha sido hospitalizado en el último año?",
+    "¿Tiene enfermedades crónicas?",
+    "¿Realiza actividad física regularmente?"
+    };
+    }
+
+    <div id="attributesContainer">
+        @for (int i = 0; i < fixedAttributes.Count; i++)
+        {
+            <div class="form-group mb-2 d-flex gap-2">
+                <input type="hidden" name="Attributes[@i].Type" value="@fixedAttributes[i]" />
+                <label style="width:250px;">@fixedAttributes[i]</label>
+                <select name="Attributes[@i].Value" class="form-control" style="width:100px;">
+                    <option value="Sí">Sí</option>
+                    <option value="No" selected>No</option>
+                </select>
+            </div>
+        }
+    </div>
+
+    <br /><br />
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

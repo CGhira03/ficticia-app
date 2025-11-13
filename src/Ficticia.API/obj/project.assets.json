@@ -5208,6 +5208,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Ficticia.Application >= 1.0.0",
+      "Ficticia.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.10",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -5248,6 +5249,9 @@
           "projectReferences": {
             "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Ficticia.Application.csproj": {
               "projectPath": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Ficticia.Application.csproj"
+            },
+            "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Infrastructure\\Ficticia.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Infrastructure\\Ficticia.Infrastructure.csproj"
             }
           }
         }

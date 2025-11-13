@@ -1,4 +1,4 @@
-using Ficticia.Domain.Entities;
+ï»¿using Ficticia.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ficticia.Infrastructure.Persistence
@@ -18,12 +18,10 @@ namespace Ficticia.Infrastructure.Persistence
         {
             base.OnModelCreating(modelBuilder);
 
-            // Índice único para identificación
             modelBuilder.Entity<Person>()
                 .HasIndex(p => p.Identification)
                 .IsUnique();
 
-            // Relaciones
             modelBuilder.Entity<PersonAttribute>()
                 .HasOne(pa => pa.Person)
                 .WithMany(p => p.Attributes)
@@ -36,5 +34,6 @@ namespace Ficticia.Infrastructure.Persistence
                 .HasForeignKey(pa => pa.AttributeTypeId)
                 .OnDelete(DeleteBehavior.Restrict);
         }
+
     }
 }

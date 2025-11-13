@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Ficticia.Application.csproj": {
                 "projectPath": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Application\\Ficticia.Application.csproj"
+              },
+              "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Infrastructure\\Ficticia.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\cghir\\OneDrive\\Escritorio\\FicticiaApp\\src\\Ficticia.Infrastructure\\Ficticia.Infrastructure.csproj"
               }
             }
           }
